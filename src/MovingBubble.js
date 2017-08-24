@@ -22,10 +22,7 @@ class MovingBubble extends Component {
               fontSize: `${bubble.size}em`,
               borderStyle: `${this.state.borderStylez.sort(() => {return 0.5 - Math.random()})[0]}`
             }}>
-            <a href={bubble.link}
-            style={{
-              color: `${bubble.color}`,
-            }}>
+            <a href={bubble.link} style={{color: `${bubble.color}`}}>
               {bubble.title}
             </a>
           </div>
