@@ -7,7 +7,7 @@ class MovingBubble extends Component {
   // {JSON.stringify(this.props)}
 
   state = {
-    borderStylez : ['dotted', 'dashed', 'solid', 'double', 'groove', 'ridge', 'inset', 'outset']
+    borderStylez : ['dotted', 'dashed', 'solid', 'double']
   }
 
   render() {
@@ -15,12 +15,19 @@ class MovingBubble extends Component {
       <div className="all-things">
       {console.log(JSON.stringify(0.5 - Math.random()))}
         {this.props.bubbles.map((bubble) => (
-          <div className="bubble" style={{
-              color: `${bubble.color}`, // maybe better later backgroundColor instead
+          <div
+            className="bubble"
+            style={{
+              color: `${bubble.color}`,
               fontSize: `${bubble.size}em`,
               borderStyle: `${this.state.borderStylez.sort(() => {return 0.5 - Math.random()})[0]}`
             }}>
-            <span>{bubble.title}</span>
+            <a href={bubble.link}
+            style={{
+              color: `${bubble.color}`,
+            }}>
+              {bubble.title}
+            </a>
           </div>
         ))}
       </div>

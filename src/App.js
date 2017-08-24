@@ -9,16 +9,23 @@ class App extends Component {
     bubbles: [
       {
         title: 'imageinations',
-        link: '',
-        color: 'red',
-        size: 2,
+        link: 'https://xyayz/imageinations',
+        color: 'orange',
+        size: 1,
         speed: 0
       },
       {
         title: 'notes',
-        link: '',
-        color: 'blue',
-        size: 1,
+        link: 'https://xyayz/notes',
+        color: 'lightblue',
+        size: 2,
+        speed: 0
+      },
+      {
+        title: 'me',
+        link: 'https://xyayz/me',
+        color: 'lightgreen',
+        size: 0.5,
         speed: 0
       }
     ]

@@ -2,7 +2,15 @@
   text-align: center;
 }
 
+.all-things {
+  display: flex;
+}
+
 .bubble {
-  padding: 40px;
+  padding: 20px;
   border-radius: 100px;
+}
+
+a {
+  text-decoration: none;
 }
