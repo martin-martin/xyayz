@@ -13,11 +13,12 @@ class MovingBubble extends Component {
   render() {
     return (
       <div className="all-things">
+      {console.log(JSON.stringify(0.5 - Math.random()))}
         {this.props.bubbles.map((bubble) => (
           <div className="bubble" style={{
               color: `${bubble.color}`, // maybe better later backgroundColor instead
               fontSize: `${bubble.size}em`,
-              borderStyle: `${this.state.borderStylez.sort(function() {return 0.5 - Math.random()})[0]}`
+              borderStyle: `${this.state.borderStylez.sort(() => {return 0.5 - Math.random()})[0]}`
             }}>
             <span>{bubble.title}</span>
           </div>
