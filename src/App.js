@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MovingBubble from './MovingBubble';
+import TextPost from './TextPost'
 import './App.css';
 
 class App extends Component {
@@ -37,6 +38,7 @@ class App extends Component {
         <MovingBubble
           bubbles={this.state.bubbles}
         />
+        <TextPost/>
       </div>
     );
   }
