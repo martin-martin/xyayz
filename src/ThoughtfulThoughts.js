@@ -26,7 +26,7 @@ class ThoughtfulThoughts extends Component {
         <div className="current-thought" style={{opacity: this.state.opacity}}>
           {this.state.thoughts.map((thought, i) => (<p key={i}>{thought}</p>))}
         </div>
-        <button onClick={this.makeAppear}>Think for me</button>
+        <button onClick={this.makeAppear}>Focus!</button>
       </div>
     )
 
