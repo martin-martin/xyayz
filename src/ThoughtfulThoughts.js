@@ -22,7 +22,6 @@ class ThoughtfulThoughts extends Component {
     this.setState((prevState) => ({
       thoughts: shuffledThoughts
     }))
-    console.log(this.state.thoughts)
   }
 
   /**
@@ -44,11 +43,31 @@ class ThoughtfulThoughts extends Component {
    * Increases the opacity variable in state by 0.1
    */
   makeAppear = () => {
-    //TODO: include fun stuff like: when clicked 50 times text turns red : )
+    // TODO: include fun stuff like: when clicked 50 times text turns red : )
     if(this.state.opacity < 1) {
       this.setState((prevState) => ({
           opacity: prevState.opacity + 0.1
       }))
+    }
+  }
+
+  /**
+   * Serves a new thought until they run out
+   * (propping it into this.state.currentThought)
+   * then drops a highly motivational line for the highly motivated clicker
+   */
+  seedNextThought = () => {
+    if(this.state.thoughts.length > 0) {
+      this.setState((prevState) => ({
+        currentThought: prevState.thoughts.shift(),
+        opacity: 0
+      }))
+    } else {
+      // TODO: could also add a fun changing msg at many clicks...
+      this.setState({
+        currentThought: "ok... now think and focus without clicking",
+        opacity: 0
+      })
     }
   }
 
