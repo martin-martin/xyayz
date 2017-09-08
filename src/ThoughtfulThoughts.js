@@ -13,9 +13,11 @@ class ThoughtfulThoughts extends Component {
   }
 
   makeAppear = () => {
-    this.setState((prevState) => ({
-        opacity: prevState.opacity + 0.1
-    }))
+    if(this.state.opacity < 1) {
+      this.setState((prevState) => ({
+          opacity: prevState.opacity + 0.1
+      }))
+    }
   }
 
   render() {
