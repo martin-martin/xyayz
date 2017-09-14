@@ -1,23 +1,41 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 class MovingBubble extends Component {
 
-  // add to return() fun for debugging:
-  // {JSON.stringify(this.props)}
-  static propTypes = {
-    bubbles: PropTypes.array.isRequired
-  }
-
-  state = {
-    borderStylez : ['dotted', 'dashed', 'solid', 'double']
+state = {
+    borderStylez : ['dotted', 'dashed', 'solid', 'double'],
+    multiplier: 1,
+    bubbles: [
+      {
+        title: 'imageinations',
+        link: 'https://www.xyayz/imageinations',
+        color: 'orange',
+        size: 1,
+        speed: 0
+      },
+      {
+        title: 'notes',
+        link: 'https://www.xyayz/notes',
+        color: 'lightblue',
+        size: 2,
+        speed: 0
+      },
+      {
+        title: 'me',
+        link: 'https://www.xyayz/me',
+        color: 'lightgreen',
+        size: 0.5,
+        speed: 0
+      }
+    ]
   }
 
   render() {
     return (
       <div className="all-things">
-      {console.log(JSON.stringify(0.5 - Math.random()))}
-        {this.props.bubbles.map((bubble, i) => (
+        {this.state.bubbles.map((bubble, i) => (
           <div
             className="bubble"
             key={i}
@@ -26,9 +44,9 @@ class MovingBubble extends Component {
               fontSize: `${bubble.size}em`,
               borderStyle: `${this.state.borderStylez.sort(() => {return 0.5 - Math.random()})[0]}`
             }}>
-            <a href={bubble.link} style={{color: `${bubble.color}`}}>
+            <Link to={"/" + bubble.title} style={{color: `${bubble.color}`}}>
               {bubble.title}
-            </a>
+            </Link>
           </div>
         ))}
       </div>
