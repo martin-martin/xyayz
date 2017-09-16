@@ -8,8 +8,8 @@ state = {
     multiplier: 1,
     bubbles: [
       {
-        title: 'imageinations',
-        link: 'https://www.xyayz/imageinations',
+        title: 'imageination',
+        link: 'https://www.xyayz/photography',
         color: 'orange',
         size: 1,
         speed: 0
@@ -22,12 +22,47 @@ state = {
         speed: 0
       },
       {
+        title: 'textings',
+        link: 'https://www.xyayz/writing',
+        color: '#ADFF2F',
+        size: 1,
+        speed: 0
+      },
+      {
+        title: 'drawings',
+        link: 'https://www.xyayz/drawing',
+        color: 'lavender',
+        size: 3,
+        speed: 0
+      },
+      {
         title: 'me',
         link: 'https://www.xyayz/me',
         color: 'lightgreen',
         size: 0.5,
         speed: 0
-      }
+      },
+      {
+        title: '¯\\_(ツ)_/¯',
+        link: 'https://www.xyayz/qa',
+        color: '#ff6347',
+        size: 2.5,
+        speed: 0
+      },
+      {
+        title: 'soundings',
+        link: 'https://www.xyayz/music',
+        color: '#ffd700',
+        size: 1,
+        speed: 0
+      },
+      {
+        title: '/\\ °',
+        link: 'https://www.xyayz/travels',
+        color: 'pink',
+        size: 2,
+        speed: 0
+      },
     ]
   }
 
