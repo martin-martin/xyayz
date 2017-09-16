@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
 import MovingBubble from './MovingBubble'
 import TextPost from './TextPost'
+import ImagePost from './ImagePost'
 import ThoughtfulThoughts from './ThoughtfulThoughts'
 import './App.css'
 
@@ -18,6 +19,9 @@ class App extends Component {
         )}/>
         <Route path="/me" render={() => (
           <TextPost/>
+        )}/>
+        <Route path="/imageinations" render={() => (
+          <ImagePost/>
         )}/>
       </div>
     );
