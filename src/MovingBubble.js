@@ -22,20 +22,6 @@ state = {
         speed: 0
       },
       {
-        title: 'textings',
-        link: 'https://www.xyayz/writing',
-        color: '#ADFF2F',
-        size: 1,
-        speed: 0
-      },
-      {
-        title: 'drawings',
-        link: 'https://www.xyayz/drawing',
-        color: 'lavender',
-        size: 3,
-        speed: 0
-      },
-      {
         title: 'me',
         link: 'https://www.xyayz/me',
         color: 'lightgreen',
@@ -57,12 +43,26 @@ state = {
         speed: 0
       },
       {
+        title: 'textings',
+        link: 'https://www.xyayz/writing',
+        color: '#ADFF2F',
+        size: 1,
+        speed: 0
+      },
+      {
         title: '/\\ °',
         link: 'https://www.xyayz/travels',
         color: 'pink',
         size: 2,
         speed: 0
       },
+      {
+        title: 'drawings',
+        link: 'https://www.xyayz/drawing',
+        color: 'lavender',
+        size: 3,
+        speed: 0
+      }
     ]
   }
 

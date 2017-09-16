@@ -77,8 +77,8 @@ class ThoughtfulThoughts extends Component {
         <p className="current-thought" style={{opacity: this.state.opacity}}>
           {this.state.currentThought}
         </p>
-        <button onClick={this.makeAppear}>Focus!</button>
-        <button onClick={this.seedNextThought}>Think...</button>
+        <button className="btn" onClick={this.makeAppear}>Focus!</button>
+        <button className="btn mossgreen" onClick={this.seedNextThought}>Think...</button>
       </div>
     )
 
