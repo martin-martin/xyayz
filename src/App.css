@@ -23,12 +23,13 @@ a {
 }
 
 .note-title {
-  font-weight: bold;
-  font-size: 1.2em;
+  font-weight: 200;
+  font-size: 1.4em;
 }
 
 .note-body {
   padding-top: 15px;
+  font-weight: 100;
 }
 
 /* improve mobile accessibility */
