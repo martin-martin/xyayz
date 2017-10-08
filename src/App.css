@@ -18,6 +18,16 @@ a {
 
 .text-note {
   text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.note-title {
+  font-weight: bold;
+}
+
+.note-body {
+  padding-top: 15px;
 }
 
 /* improve mobile accessibility */
