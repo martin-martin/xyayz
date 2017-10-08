@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
+import NavBack from './NavBack'
 
 class ThoughtfulThoughts extends Component {
 
   state = {
     opacity: 0,
-    currentThought: "ai!",
+    currentThought: "8,50$ for 2.27 kg peanuts. Less than 40 $cents per 100 grams!",
     thoughts:
       [
-        "live and let leave",
-        "just pee yourself",
-        "who knows what 'laf' is?"
+        "Always blank out the most frequent word in a sentece",
+        "A washing place should have a fitness center included!",
+        "A bit more time before we part..."
       ]
   }
 
@@ -73,12 +74,16 @@ class ThoughtfulThoughts extends Component {
 
   render() {
     return (
-      <div className="thoughtful-thoughts">
-        <p className="current-thought" style={{opacity: this.state.opacity}}>
-          {this.state.currentThought}
-        </p>
-        <button className="btn" onClick={this.makeAppear}>Focus!</button>
-        <button className="btn mossgreen" onClick={this.seedNextThought}>Think...</button>
+      <div>
+        <NavBack/>
+        <div className="padding"></div>
+        <div className="thoughtful-thoughts">
+          <p className="current-thought" style={{opacity: this.state.opacity}}>
+            {this.state.currentThought}
+          </p>
+          <button className="btn" onClick={this.makeAppear}>Focus!</button>
+          <button className="btn mossgreen" onClick={this.seedNextThought}>Think...</button>
+        </div>
       </div>
     )
 

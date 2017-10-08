@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route path="/" render={() => (
+        <Route exact path="/" render={() => (
           <MovingBubble/>
         )}/>
         <Route path="/notes" render={() => (

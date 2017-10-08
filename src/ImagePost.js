@@ -3,6 +3,7 @@
 // https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app
 
 import React, { Component } from 'react'
+import NavBack from './NavBack'
 //import pictures from './data/pictures.json'
 
 class ImagePost extends Component {
@@ -31,6 +32,7 @@ class ImagePost extends Component {
 
     return (
         <div className="image-album">
+        <NavBack/>
         {this.state.images.map((image, i) => (
           <div className="img-note" key={i} id={"img-note-" + i}>
             <img
