@@ -9,6 +9,8 @@ class TextPost extends Component {
   render() {
     // how many characters a newline takes in the data
     var newlineOffset = 12
+    // TODO: maybe make the char description next to the note only s-m-l
+    //       depending on specific char count cut-offs
 
     return (
         <div className="notebook">
